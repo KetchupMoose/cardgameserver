@@ -12,7 +12,7 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
-  databaseURI: databaseUri || 'mongodb://<brian>:<Zeothul88>@ds015976-a0.mlab.com:15976,ds015976-a1.mlab.com:15976/cardforgemaindb?replicaSet=rs-ds015976',
+  databaseURI: databaseUri || 'mongodb://<brian>:<blobzeo88>@ds015976-a0.mlab.com:15976,ds015976-a1.mlab.com:15976/cardforgemaindb?replicaSet=rs-ds015976',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'cardforge',
   masterKey: process.env.MASTER_KEY || 'Manatee93', //Add your master key here. Keep it secret!
