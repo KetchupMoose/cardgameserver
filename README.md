@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # parse-server-example
 
 Example project using the [parse-server](https://github.com/ParsePlatform/parse-server) module on Express.
@@ -146,3 +147,6 @@ Parse.initializeWithConfiguration(ParseClientConfiguration(block: { (configurati
 }))
 ```
 You can change the server URL in all of the open-source SDKs, but we're releasing new builds which provide initialization time configuration of this property.
+=======
+# cardgameserver
+>>>>>>> 11348a9958bc0ca3efb2d2ee45abf40162508135
