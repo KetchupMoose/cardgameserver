@@ -150,26 +150,3 @@ response.error("Couldn't find card");
 }
 })
 });
-
-/**
-* new test function to try simpler version of pbulishing card
-*/
-Parse.Cloud.define("publishCardSimple", function(request, response) {
-if (request.user.get("blankCards") <= 0)
-{
-response.error("No blank cards left");
-return;
-}
-
-var cardQuery = new Parse.Query("Card");
-cardQuery.get(request.params.cardID, {
-success:function(card)
-{
-response.success("got a card!");
-},
-error: function(error) {
-response.error("Couldn't query");
-}
-});
-
-});
