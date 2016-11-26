@@ -12,11 +12,11 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
-  databaseURI: databaseUri || 'mongodb://brian:blobzeo88@ds015976-a0.mlab.com:15976,ds015976-a1.mlab.com:15976/cardforgemaindb?replicaSet=rs-ds015976',
+  databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'cardforge',
   masterKey: process.env.MASTER_KEY || 'Manatee93', //Add your master key here. Keep it secret!
-  serverURL: process.env.SERVER_URL || 'http://cardforge.herokuapp.com/parse',  // Don't forget to change to https if needed
+  serverURL: process.env.SERVER_URL || 'http://localhost:1337',  // Don't forget to change to https if needed
   javascriptKey: process.env.JAVASCRIPT_KEY || 'Turtle93',
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
